@@ -11,16 +11,31 @@ from tabulate import tabulate  # Import tabulate for pretty-printing
 STUDENT_REPOS_DIR = 'C:/Users/Catalin Ciurean/Desktop/verificare'
 # List of student names and their corresponding GitHub repositories
 STUDENT_REPO_MAP = {
-    'Sebastian Bodea': 'https://github.com/isp-cluj/isp-2025-hm-sebastian-bodea-30126.git',
-    'Alex Bonatiu': 'https://github.com/isp-cluj/isp-2025-hm-BonatiuAlex',
-    'Ciuvlacu Paul': 'https://github.com/isp-cluj/isp-2025-hm-MethPaul.git',
-    'Andrei Dala': 'https://github.com/isp-cluj/isp-2025-hm-dalaandrei.git',
+    'Bodea Sebastian': 'https://github.com/isp-cluj/isp-2025-hm-sebastian-bodea-30126.git',
+    'Bonatiu Alexandru - Sebastian': 'https://github.com/isp-cluj/isp-2025-hm-BonatiuAlex',
+    'Ciulavu Paul - Gabriel': 'https://github.com/isp-cluj/isp-2025-hm-MethPaul.git',
+    'Dala Andrei - Daniel': 'https://github.com/isp-cluj/isp-2025-hm-dalaandrei.git',
     'Frank Antonia': 'https://github.com/isp-cluj/isp-2025-hm-AntoniaFrank22',
     'Frateanu David - Petru': 'https://github.com/isp-cluj/isp-2025-hm-DPFrateanu',
     'Har Adrian - Gabriel': 'https://github.com/isp-cluj/isp-2025-hm-aditzuAGH.git',
     'Ionica Dan - Cristian': 'https://github.com/isp-cluj/isp-2025-hm-dann911.git',
     'Jircan Alexandra - Stefana - Maria': 'https://github.com/isp-cluj/isp-2025-hm-AlexandraJircan',
+    'Knecht Patrik': 'https://github.com/isp-cluj/isp-2025-hm-carnati.git',
+    'Luci Razvan - Gabriel': 'https://github.com/isp-cluj/isp-2025-hm-RazvanLuci',
+    'Marc Octavia': 'https://github.com/isp-cluj/isp-2025-hm-marcoctavia.git',
     'Mintau Andrei - Catalin': 'https://github.com/isp-cluj/isp-2025-hm-MoNTyZew',
+    'Mircea Bogdan - Florin': 'https://github.com/isp-cluj/isp-2025-hm-bogdanmircea10',
+    'Moldovan Bianca - Cristina': 'https://github.com/isp-cluj/isp-2025-hm-biancacristinamoldovan',
+    'Morosan Sebastian- Vasile': 'https://github.com/isp-cluj/isp-2025-hm-morosan-sebastian-vasile-30126',
+    'Morosanu Ioan - Teodor': 'https://github.com/isp-cluj/isp-2025-hm-teodormorosanu',
+    'Nagy David - Csaba': 'https://github.com/isp-cluj/isp-2025-hm-Flakon1',
+    'Pakot Peter': 'https://github.com/isp-cluj/isp-2025-hm-RockLionIT',
+    'Patrascan Ana - Florina': 'https://github.com/isp-cluj/isp-2025-hm-florina01',
+    'Robotin Cosmina - Cristiana': 'https://github.com/isp-cluj/isp-2025-hm-cosminarobotin',
+    'Teoc Daria - Lavinia': 'https://github.com/isp-cluj/isp-2025-hm-DariaLavinia',
+    'Trif Andrei': 'https://github.com/isp-cluj/isp-2025-hm-andrei14trif',
+    'Zaharie Alin - Nicolae': 'https://github.com/isp-cluj/isp-2025-hm-BoniiChan',
+
     # Add more students and their GitHub links here
 }
 EXCLUDED_PACKAGES = ['utcluj/aut/lab2/exercises/demo', 'utcluj/aut/lab2/tests']
@@ -31,6 +46,7 @@ PACKAGE_PATH = 'isp-lab-2-2025-main/src/main/java/utcluj/aut/lab2/exercises'
 # Directory where repositories will be cloned
 TEMP_SUBMISSIONS_DIR = 'temp_submissions'
 
+
 def prepare_submissions():
     if os.path.exists(TEMP_SUBMISSIONS_DIR):
         shutil.rmtree(TEMP_SUBMISSIONS_DIR)
@@ -40,8 +56,17 @@ def prepare_submissions():
         repo_name = github_url.rstrip('/').split('/')[-1]
         repo_path = os.path.join(STUDENT_REPOS_DIR, repo_name)
 
-        if not os.path.exists(repo_path):
-            print(f"🔄 Cloning repository for {student_name}...")
+        if os.path.exists(repo_path):
+            print(f" Skip pull")
+            # uncomment for pulling latest changes
+            # print(f"🔄 Pulling latest changes for {student_name}...")
+            # try:
+            #     subprocess.run(["git", "-C", repo_path, "pull"], check=True)
+            # except subprocess.CalledProcessError:
+            #     print(f"❌ Failed to pull latest changes for {student_name}, skipping...")
+            #     continue
+        else:
+            print(f"🆕 Cloning repository for {student_name}...")
             try:
                 subprocess.run(["git", "clone", github_url, repo_path], check=True)
             except subprocess.CalledProcessError:
@@ -82,6 +107,7 @@ def compare_files(file1, file2):
     ratio = difflib.SequenceMatcher(None, file1_lines, file2_lines).ratio()
     return ratio
 
+
 def detect_duplication(submission_files):
     similarities = []
 
@@ -95,6 +121,7 @@ def detect_duplication(submission_files):
 
     return similarities
 
+
 # Function to get student name from the file path
 def get_student_name(file_path):
     repo_name = file_path.split(os.path.sep)[-2]
@@ -102,6 +129,7 @@ def get_student_name(file_path):
         if repo_name in github_url:
             return student_name
     return "Unknown"
+
 
 # Print results in a pretty format
 def print_results_pretty(similarities):
@@ -112,20 +140,35 @@ def print_results_pretty(similarities):
         file1, file2, ratio = similarity
         student1 = get_student_name(file1)
         student2 = get_student_name(file2)
-        table.append([student1, student2, file1, file2, f"{ratio * 100:.2f}%"])
 
-    print("\nCode Duplication Results:")
+        # Extract only the file name
+        file1_name = os.path.basename(file1)
+        file2_name = os.path.basename(file2)
+
+        table.append([student1, student2, file1_name, file2_name, f"{ratio * 100:.2f}%"])
+
+    print("\n📊 Code Duplication Results:")
     print(tabulate(table, headers, tablefmt="pretty"))
+
 
 def save_results(similarities):
     with open('code_duplication_results.csv', mode='w', newline='') as file:
         writer = csv.writer(file)
         writer.writerow(['Student 1', 'Student 2', 'File 1', 'File 2', 'Similarity'])
+
         for similarity in similarities:
             file1, file2, ratio = similarity
             student1 = get_student_name(file1)
             student2 = get_student_name(file2)
-            writer.writerow([student1, student2, file1, file2, f"{ratio * 100:.2f}%"])
+
+            # Extract only the file name
+            file1_name = os.path.basename(file1)
+            file2_name = os.path.basename(file2)
+
+            writer.writerow([student1, student2, file1_name, file2_name, f"{ratio * 100:.2f}%"])
+
+    print(f"✅ Results saved to 'code_duplication_results.csv' with only file names.")
+
 
 def run_all():
     submission_files = prepare_submissions()
@@ -137,6 +180,7 @@ def run_all():
 
     save_results(similarities)
     print(f"Results saved to 'code_duplication_results.csv'")
+
 
 if __name__ == '__main__':
     run_all()

@@ -1,23 +1,69 @@
 Student 1,Student 2,File 1,File 2,Similarity
-Frateanu David - Petru,Mintau Andrei - Catalin,temp_submissions\isp-2025-hm-DPFrateanu\Ex4StudentRecordManager.java,temp_submissions\isp-2025-hm-MoNTyZew\Ex4StudentRecordManager.java,98.65%
-Frateanu David - Petru,Mintau Andrei - Catalin,temp_submissions\isp-2025-hm-DPFrateanu\Ex6BullsAndCowsGame.java,temp_submissions\isp-2025-hm-MoNTyZew\Ex6BullsAndCowsGame.java,98.64%
-Frateanu David - Petru,Mintau Andrei - Catalin,temp_submissions\isp-2025-hm-DPFrateanu\Ex5StringAnalyzer.java,temp_submissions\isp-2025-hm-MoNTyZew\Ex5StringAnalyzer.java,95.17%
-Frateanu David - Petru,Mintau Andrei - Catalin,temp_submissions\isp-2025-hm-DPFrateanu\Ex2PalindromeFinder.java,temp_submissions\isp-2025-hm-MoNTyZew\Ex2PalindromeFinder.java,92.50%
-Frateanu David - Petru,Mintau Andrei - Catalin,temp_submissions\isp-2025-hm-DPFrateanu\Ex3FactorialCalculator.java,temp_submissions\isp-2025-hm-MoNTyZew\Ex3FactorialCalculator.java,86.02%
-Andrei Dala,Ionica Dan - Cristian,temp_submissions\isp-2025-hm-dalaandrei.git\Ex4StudentRecordManager.java,temp_submissions\isp-2025-hm-dann911.git\Ex4StudentRecordManager.java,84.52%
-Ionica Dan - Cristian,Mintau Andrei - Catalin,temp_submissions\isp-2025-hm-dann911.git\Ex1ArrayAnalyzer.java,temp_submissions\isp-2025-hm-MoNTyZew\Ex1ArrayAnalyzer.java,77.23%
-Ionica Dan - Cristian,Sebastian Bodea,temp_submissions\isp-2025-hm-dann911.git\Ex1ArrayAnalyzer.java,temp_submissions\isp-2025-hm-sebastian-bodea-30126.git\Ex1ArrayAnalyzer.java,75.62%
-Alex Bonatiu,Frateanu David - Petru,temp_submissions\isp-2025-hm-BonatiuAlex\Ex3FactorialCalculator.java,temp_submissions\isp-2025-hm-DPFrateanu\Ex3FactorialCalculator.java,74.51%
-Har Adrian - Gabriel,Ionica Dan - Cristian,temp_submissions\isp-2025-hm-aditzuAGH.git\Ex1ArrayAnalyzer.java,temp_submissions\isp-2025-hm-dann911.git\Ex1ArrayAnalyzer.java,73.43%
-Alex Bonatiu,Ionica Dan - Cristian,temp_submissions\isp-2025-hm-BonatiuAlex\Ex1ArrayAnalyzer.java,temp_submissions\isp-2025-hm-dann911.git\Ex1ArrayAnalyzer.java,73.43%
-Andrei Dala,Frateanu David - Petru,temp_submissions\isp-2025-hm-dalaandrei.git\Ex1ArrayAnalyzer.java,temp_submissions\isp-2025-hm-DPFrateanu\Ex1ArrayAnalyzer.java,73.20%
-Jircan Alexandra - Stefana - Maria,Ionica Dan - Cristian,temp_submissions\isp-2025-hm-AlexandraJircan\Ex1ArrayAnalyzer.java,temp_submissions\isp-2025-hm-dann911.git\Ex1ArrayAnalyzer.java,72.36%
-Alex Bonatiu,Sebastian Bodea,temp_submissions\isp-2025-hm-BonatiuAlex\Ex3FactorialCalculator.java,temp_submissions\isp-2025-hm-sebastian-bodea-30126.git\Ex3FactorialCalculator.java,72.26%
-Alex Bonatiu,Mintau Andrei - Catalin,temp_submissions\isp-2025-hm-BonatiuAlex\Ex3FactorialCalculator.java,temp_submissions\isp-2025-hm-MoNTyZew\Ex3FactorialCalculator.java,71.90%
-Jircan Alexandra - Stefana - Maria,Alex Bonatiu,temp_submissions\isp-2025-hm-AlexandraJircan\Ex3FactorialCalculator.java,temp_submissions\isp-2025-hm-BonatiuAlex\Ex3FactorialCalculator.java,71.70%
-Mintau Andrei - Catalin,Sebastian Bodea,temp_submissions\isp-2025-hm-MoNTyZew\Ex1ArrayAnalyzer.java,temp_submissions\isp-2025-hm-sebastian-bodea-30126.git\Ex1ArrayAnalyzer.java,71.64%
-Jircan Alexandra - Stefana - Maria,Mintau Andrei - Catalin,temp_submissions\isp-2025-hm-AlexandraJircan\Ex1ArrayAnalyzer.java,temp_submissions\isp-2025-hm-MoNTyZew\Ex1ArrayAnalyzer.java,71.36%
-Jircan Alexandra - Stefana - Maria,Alex Bonatiu,temp_submissions\isp-2025-hm-AlexandraJircan\Ex4StudentRecordManager.java,temp_submissions\isp-2025-hm-BonatiuAlex\Ex4StudentRecordManager.java,70.74%
-Jircan Alexandra - Stefana - Maria,Sebastian Bodea,temp_submissions\isp-2025-hm-AlexandraJircan\Ex2PalindromeFinder.java,temp_submissions\isp-2025-hm-sebastian-bodea-30126.git\Ex2PalindromeFinder.java,70.51%
-Jircan Alexandra - Stefana - Maria,Frateanu David - Petru,temp_submissions\isp-2025-hm-AlexandraJircan\Ex1ArrayAnalyzer.java,temp_submissions\isp-2025-hm-DPFrateanu\Ex1ArrayAnalyzer.java,70.10%
-Ionica Dan - Cristian,Frateanu David - Petru,temp_submissions\isp-2025-hm-dann911.git\Ex1ArrayAnalyzer.java,temp_submissions\isp-2025-hm-DPFrateanu\Ex1ArrayAnalyzer.java,70.05%
+Trif Andrei,Bonatiu Alexandru - Sebastian,Ex6BullsAndCowsGame.java,Ex6BullsAndCowsGame.java,100.00%
+Trif Andrei,Zaharie Alin - Nicolae,Ex6BullsAndCowsGame.java,Ex6BullsAndCowsGame.java,100.00%
+Trif Andrei,Pakot Peter,Ex6BullsAndCowsGame.java,Ex6BullsAndCowsGame.java,100.00%
+Bonatiu Alexandru - Sebastian,Zaharie Alin - Nicolae,Ex6BullsAndCowsGame.java,Ex6BullsAndCowsGame.java,100.00%
+Bonatiu Alexandru - Sebastian,Pakot Peter,Ex6BullsAndCowsGame.java,Ex6BullsAndCowsGame.java,100.00%
+Zaharie Alin - Nicolae,Pakot Peter,Ex6BullsAndCowsGame.java,Ex6BullsAndCowsGame.java,100.00%
+Patrascan Ana - Florina,Ciulavu Paul - Gabriel,Ex5StringAnalyzer.java,Ex5StringAnalyzer.java,100.00%
+Patrascan Ana - Florina,Ciulavu Paul - Gabriel,Ex6BullsAndCowsGame.java,Ex6BullsAndCowsGame.java,100.00%
+Trif Andrei,Nagy David - Csaba,Ex5StringAnalyzer.java,Ex5StringAnalyzer.java,99.78%
+Frateanu David - Petru,Mintau Andrei - Catalin,Ex4StudentRecordManager.java,Ex4StudentRecordManager.java,98.65%
+Frateanu David - Petru,Mintau Andrei - Catalin,Ex6BullsAndCowsGame.java,Ex6BullsAndCowsGame.java,98.64%
+Frateanu David - Petru,Mintau Andrei - Catalin,Ex5StringAnalyzer.java,Ex5StringAnalyzer.java,95.17%
+Zaharie Alin - Nicolae,Teoc Daria - Lavinia,Ex1ArrayAnalyzer.java,Ex1ArrayAnalyzer.java,93.00%
+Frateanu David - Petru,Mintau Andrei - Catalin,Ex2PalindromeFinder.java,Ex2PalindromeFinder.java,92.50%
+Frateanu David - Petru,Mintau Andrei - Catalin,Ex3FactorialCalculator.java,Ex3FactorialCalculator.java,86.02%
+Dala Andrei - Daniel,Ionica Dan - Cristian,Ex4StudentRecordManager.java,Ex4StudentRecordManager.java,84.52%
+Trif Andrei,Nagy David - Csaba,Ex1ArrayAnalyzer.java,Ex1ArrayAnalyzer.java,80.79%
+Knecht Patrik,Robotin Cosmina - Cristiana,Ex6BullsAndCowsGame.java,Ex6BullsAndCowsGame.java,79.88%
+Knecht Patrik,Marc Octavia,Ex6BullsAndCowsGame.java,Ex6BullsAndCowsGame.java,79.88%
+Zaharie Alin - Nicolae,Teoc Daria - Lavinia,Ex5StringAnalyzer.java,Ex5StringAnalyzer.java,78.54%
+Trif Andrei,Robotin Cosmina - Cristiana,Ex2PalindromeFinder.java,Ex2PalindromeFinder.java,77.38%
+Ionica Dan - Cristian,Mintau Andrei - Catalin,Ex1ArrayAnalyzer.java,Ex1ArrayAnalyzer.java,77.23%
+Jircan Alexandra - Stefana - Maria,Patrascan Ana - Florina,Ex1ArrayAnalyzer.java,Ex1ArrayAnalyzer.java,76.53%
+Robotin Cosmina - Cristiana,Marc Octavia,Ex6BullsAndCowsGame.java,Ex6BullsAndCowsGame.java,76.11%
+Ionica Dan - Cristian,Bodea Sebastian,Ex1ArrayAnalyzer.java,Ex1ArrayAnalyzer.java,75.62%
+Ionica Dan - Cristian,Patrascan Ana - Florina,Ex1ArrayAnalyzer.java,Ex1ArrayAnalyzer.java,75.38%
+Moldovan Bianca - Cristina,Patrascan Ana - Florina,Ex3FactorialCalculator.java,Ex3FactorialCalculator.java,75.12%
+Trif Andrei,Robotin Cosmina - Cristiana,Ex1ArrayAnalyzer.java,Ex1ArrayAnalyzer.java,74.29%
+Jircan Alexandra - Stefana - Maria,Marc Octavia,Ex1ArrayAnalyzer.java,Ex1ArrayAnalyzer.java,73.53%
+Patrascan Ana - Florina,Marc Octavia,Ex1ArrayAnalyzer.java,Ex1ArrayAnalyzer.java,73.53%
+Har Adrian - Gabriel,Ionica Dan - Cristian,Ex1ArrayAnalyzer.java,Ex1ArrayAnalyzer.java,73.43%
+Dala Andrei - Daniel,Frateanu David - Petru,Ex1ArrayAnalyzer.java,Ex1ArrayAnalyzer.java,73.20%
+Bonatiu Alexandru - Sebastian,Nagy David - Csaba,Ex1ArrayAnalyzer.java,Ex1ArrayAnalyzer.java,73.17%
+Trif Andrei,Robotin Cosmina - Cristiana,Ex4StudentRecordManager.java,Ex4StudentRecordManager.java,73.15%
+Jircan Alexandra - Stefana - Maria,Knecht Patrik,Ex1ArrayAnalyzer.java,Ex1ArrayAnalyzer.java,73.12%
+Trif Andrei,Nagy David - Csaba,Ex2PalindromeFinder.java,Ex2PalindromeFinder.java,73.05%
+Trif Andrei,Teoc Daria - Lavinia,Ex1ArrayAnalyzer.java,Ex1ArrayAnalyzer.java,72.91%
+Ionica Dan - Cristian,Marc Octavia,Ex1ArrayAnalyzer.java,Ex1ArrayAnalyzer.java,72.46%
+Jircan Alexandra - Stefana - Maria,Ionica Dan - Cristian,Ex1ArrayAnalyzer.java,Ex1ArrayAnalyzer.java,72.36%
+Trif Andrei,Morosan Sebastian- Vasile,Ex1ArrayAnalyzer.java,Ex1ArrayAnalyzer.java,72.28%
+Trif Andrei,Zaharie Alin - Nicolae,Ex1ArrayAnalyzer.java,Ex1ArrayAnalyzer.java,71.92%
+Mintau Andrei - Catalin,Bodea Sebastian,Ex1ArrayAnalyzer.java,Ex1ArrayAnalyzer.java,71.64%
+Patrascan Ana - Florina,Marc Octavia,Ex4StudentRecordManager.java,Ex4StudentRecordManager.java,71.51%
+Robotin Cosmina - Cristiana,Nagy David - Csaba,Ex1ArrayAnalyzer.java,Ex1ArrayAnalyzer.java,71.50%
+Jircan Alexandra - Stefana - Maria,Mintau Andrei - Catalin,Ex1ArrayAnalyzer.java,Ex1ArrayAnalyzer.java,71.36%
+Trif Andrei,Bonatiu Alexandru - Sebastian,Ex1ArrayAnalyzer.java,Ex1ArrayAnalyzer.java,71.15%
+Knecht Patrik,Marc Octavia,Ex1ArrayAnalyzer.java,Ex1ArrayAnalyzer.java,71.13%
+Jircan Alexandra - Stefana - Maria,Morosan Sebastian- Vasile,Ex1ArrayAnalyzer.java,Ex1ArrayAnalyzer.java,71.07%
+Moldovan Bianca - Cristina,Knecht Patrik,Ex3FactorialCalculator.java,Ex3FactorialCalculator.java,71.07%
+Frateanu David - Petru,Pakot Peter,Ex3FactorialCalculator.java,Ex3FactorialCalculator.java,71.07%
+Patrascan Ana - Florina,Morosan Sebastian- Vasile,Ex1ArrayAnalyzer.java,Ex1ArrayAnalyzer.java,71.07%
+Mintau Andrei - Catalin,Pakot Peter,Ex3FactorialCalculator.java,Ex3FactorialCalculator.java,71.07%
+Knecht Patrik,Patrascan Ana - Florina,Ex3FactorialCalculator.java,Ex3FactorialCalculator.java,70.97%
+Bonatiu Alexandru - Sebastian,Ionica Dan - Cristian,Ex1ArrayAnalyzer.java,Ex1ArrayAnalyzer.java,70.87%
+Har Adrian - Gabriel,Bonatiu Alexandru - Sebastian,Ex3FactorialCalculator.java,Ex3FactorialCalculator.java,70.85%
+Ionica Dan - Cristian,Patrascan Ana - Florina,Ex3FactorialCalculator.java,Ex3FactorialCalculator.java,70.75%
+Frateanu David - Petru,Marc Octavia,Ex3FactorialCalculator.java,Ex3FactorialCalculator.java,70.72%
+Marc Octavia,Pakot Peter,Ex2PalindromeFinder.java,Ex2PalindromeFinder.java,70.72%
+Zaharie Alin - Nicolae,Dala Andrei - Daniel,Ex1ArrayAnalyzer.java,Ex1ArrayAnalyzer.java,70.71%
+Dala Andrei - Daniel,Teoc Daria - Lavinia,Ex1ArrayAnalyzer.java,Ex1ArrayAnalyzer.java,70.71%
+Patrascan Ana - Florina,Bodea Sebastian,Ex1ArrayAnalyzer.java,Ex1ArrayAnalyzer.java,70.71%
+Har Adrian - Gabriel,Patrascan Ana - Florina,Ex1ArrayAnalyzer.java,Ex1ArrayAnalyzer.java,70.59%
+Har Adrian - Gabriel,Nagy David - Csaba,Ex3FactorialCalculator.java,Ex3FactorialCalculator.java,70.53%
+Jircan Alexandra - Stefana - Maria,Bodea Sebastian,Ex2PalindromeFinder.java,Ex2PalindromeFinder.java,70.51%
+Marc Octavia,Morosan Sebastian- Vasile,Ex1ArrayAnalyzer.java,Ex1ArrayAnalyzer.java,70.24%
+Har Adrian - Gabriel,Bonatiu Alexandru - Sebastian,Ex1ArrayAnalyzer.java,Ex1ArrayAnalyzer.java,70.14%
+Jircan Alexandra - Stefana - Maria,Frateanu David - Petru,Ex1ArrayAnalyzer.java,Ex1ArrayAnalyzer.java,70.10%
+Ionica Dan - Cristian,Frateanu David - Petru,Ex1ArrayAnalyzer.java,Ex1ArrayAnalyzer.java,70.05%

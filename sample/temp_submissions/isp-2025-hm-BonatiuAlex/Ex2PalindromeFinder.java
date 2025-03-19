@@ -1,5 +1,8 @@
 package utcluj.aut.lab2.exercises;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * Class for finding palindromic numbers in a given range.
  * Students should implement all methods to pass the unit tests.
@@ -40,18 +43,34 @@ public class Ex2PalindromeFinder {
     public int[] findPalindromes(int a, int b) {
         // TODO: Implement this method
         // 1. Validate that a <= b, throw IllegalArgumentException if not
+        if(a>b)
+            throw new IllegalArgumentException("A should be smaller or equal to b");
         // 2. Create an array to store palindromic numbers
+        int[] result = new int[19];
         // 3. Iterate through each number in the range [a, b]
+        int k=0;
+        for(int i=a;i<=b;i++) {
+            if(isPalindromic(i)) {
+                result[k]=i;
+                k++;
+            }
+        }
         // 4. Check if each number is palindromic, add to array if true
         // 5. Return the array
-        return new int[0];
+        return result;
     }
 
     public static void main(String[] args) {
-        // TODO: Implement the main method
         // 1. Create an instance of PalindromeFinder
         // 2. Define a range of numbers to check for palindromes
         // 3. Find palindromes in the defined range
         // 4. Print the array of palindromes
+
+        Ex2PalindromeFinder finder = new Ex2PalindromeFinder();
+        int[] result = finder.findPalindromes(10,200);
+
+        for(int i=0;i<result.length;i++) {
+            System.out.println(result[i]);
+        }
     }
 }

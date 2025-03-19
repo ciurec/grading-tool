@@ -38,7 +38,7 @@ public class Ex1ArrayAnalyzer {
      * @return the average value of all elements
      */
     public double calculateAverage(int[] array) {
-        // TODO: Implement this method
+
         // 1. Calculate the sum of all elements in the array
         // 2. Return the average (sum divided by length)
         // 3. Handle edge case of empty array
@@ -61,7 +61,7 @@ public class Ex1ArrayAnalyzer {
      * @return an array of 2 integers: [countAbove, countBelow]
      */
     public int[] countAboveBelowAverage(int[] array, double average) {
-        // TODO: Implement this method
+
         // 1. Count elements above the average
         // 2. Count elements below the average
         // 3. Return both counts as an array [countAbove, countBelow]
@@ -85,7 +85,7 @@ public class Ex1ArrayAnalyzer {
     }
 
     public static void main(String[] args) {
-        // TODO: Implement the main method
+
         // 1. Create an instance of ArrayAnalyzer
         // 2. Generate a random array
         // 3. Calculate the average of the array
@@ -100,7 +100,6 @@ public class Ex1ArrayAnalyzer {
         System.out.println("Average of array: " + average);
         System.out.println("Numbers of elements above: " + countAboveBelowAverage[0]);
         System.out.println("Numbers of elements above: " + countAboveBelowAverage[1]);
-
 
     }
 }
