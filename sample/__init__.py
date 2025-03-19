@@ -99,6 +99,7 @@ def prepare_submissions():
     submission_files = glob.glob(os.path.join(TEMP_SUBMISSIONS_DIR, '**', '*.java'), recursive=True)
     return submission_files
 
+
 def compare_files(file1, file2):
     with open(file1, 'r', encoding='utf-8') as f1, open(file2, 'r', encoding='utf-8') as f2:
         file1_lines = f1.readlines()
@@ -147,7 +148,6 @@ def print_results_pretty(similarities):
 
         table.append([student1, student2, file1_name, file2_name, f"{ratio * 100:.2f}%"])
 
-    print("\n📊 Code Duplication Results:")
     print(tabulate(table, headers, tablefmt="pretty"))
 
 
@@ -167,19 +167,14 @@ def save_results(similarities):
 
             writer.writerow([student1, student2, file1_name, file2_name, f"{ratio * 100:.2f}%"])
 
-    print(f"✅ Results saved to 'code_duplication_results.csv' with only file names.")
-
 
 def run_all():
     submission_files = prepare_submissions()
     print(f"Total submission files prepared: {len(submission_files)}")
 
     similarities = detect_duplication(submission_files)
-
     print_results_pretty(similarities)
-
     save_results(similarities)
-    print(f"Results saved to 'code_duplication_results.csv'")
 
 
 if __name__ == '__main__':
