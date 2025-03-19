@@ -38,10 +38,10 @@ STUDENT_REPO_MAP = {
 
     # Add more students and their GitHub links here
 }
-EXCLUDED_PACKAGES = ['utcluj/aut/lab2/exercises/demo', 'utcluj/aut/lab2/tests']
+EXCLUDED_PACKAGES = ['demo', 'test']
 
 # Specify the subdirectory (package) you want to check (relative to the root of each repo)
-PACKAGE_PATH = 'isp-lab-2-2025-main/src/main/java/utcluj/aut/lab2/exercises'
+PACKAGE_PATH = 'isp-lab-2-2025-main/src'
 
 # Directory where repositories will be cloned
 TEMP_SUBMISSIONS_DIR = 'temp_submissions'
