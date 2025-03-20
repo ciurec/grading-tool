@@ -38,10 +38,10 @@ STUDENT_REPO_MAP = {
 
     # Add more students and their GitHub links here
 }
-EXCLUDED_PACKAGES = ['demo', 'test']
+EXCLUDED_PACKAGES = ['example', 'test']
 
 # Specify the subdirectory (package) you want to check (relative to the root of each repo)
-PACKAGE_PATH = 'isp-lab-2-2025-main/src'
+PACKAGE_PATH = 'isp-lab-3-2023-master/src'
 
 # Directory where repositories will be cloned
 TEMP_SUBMISSIONS_DIR = 'temp_submissions'
@@ -60,11 +60,11 @@ def prepare_submissions():
             print(f" Skip pull")
             # uncomment for pulling latest changes
             # print(f"🔄 Pulling latest changes for {student_name}...")
-            # try:
-            #     subprocess.run(["git", "-C", repo_path, "pull"], check=True)
-            # except subprocess.CalledProcessError:
-            #     print(f"❌ Failed to pull latest changes for {student_name}, skipping...")
-            #     continue
+            try:
+                subprocess.run(["git", "-C", repo_path, "pull"], check=True)
+            except subprocess.CalledProcessError:
+                print(f"❌ Failed to pull latest changes for {student_name}, skipping...")
+                continue
         else:
             print(f"🆕 Cloning repository for {student_name}...")
             try:
@@ -111,16 +111,15 @@ def compare_files(file1, file2):
 
 def detect_duplication(submission_files):
     similarities = []
-
     for i, file1 in enumerate(submission_files):
         for file2 in submission_files[i + 1:]:
-            similarity = compare_files(file1, file2)
-            if similarity > 0.7:  # Threshold for considering as similar
-                similarities.append((file1, file2, similarity))
-
-    similarities.sort(key=lambda x: x[2], reverse=True)
-
-    return similarities
+            student1 = get_student_name(file1)
+            student2 = get_student_name(file2)
+            if student1 != student2:  # Ensure we only compare between different students
+                similarity = compare_files(file1, file2)
+                if similarity > 0.7:
+                    similarities.append((file1, file2, similarity))
+    return sorted(similarities, key=lambda x: x[2], reverse=True)
 
 
 # Function to get student name from the file path
